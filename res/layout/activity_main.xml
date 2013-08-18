@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background ="#005A75"
     tools:context=".MainActivity" >
     
    <Button
@@ -29,9 +30,9 @@
        android:id="@+id/textPrediction"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_above="@+id/pButton"
+       android:layout_below="@+id/cButton"
        android:layout_centerHorizontal="true"
-       android:layout_marginBottom="46dp"
+       android:layout_marginTop="23dp"
        android:text="Tide Prediction"
        android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -40,9 +41,9 @@
        style="?android:attr/buttonStyleSmall"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
        android:layout_alignParentLeft="true"
-       android:layout_marginBottom="161dp"
+       android:layout_below="@+id/textPrediction"
+       android:layout_marginTop="41dp"
        android:text="@string/pBttn"
        android:textColor="#252333" />
 

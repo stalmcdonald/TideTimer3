@@ -49,10 +49,10 @@ public class MainActivity extends Activity implements OnClickListener{
 		Intent i = new Intent(this, SecondActivity.class);
 		i.putExtra("cityEnter", "city");
 		startActivity(i);
-		Log.e("Entered:", city);
+		//Log.i("Entered:", city);
 		//Add City to url
-		String baseURL =  "http://api.wunderground.com/api/3e64fa36c4f09bdd/tide/q/FL/"+cities+".json" 
-		string myCity = 
+		//String baseURL =  "http://api.wunderground.com/api/3e64fa36c4f09bdd/tide/q/FL/"+cities+".json" 
+		//string myCity = 
 		
 	}
 
