@@ -4,18 +4,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
     
-     <TextView
-        android:id="@+id/note"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="22dp"
-        android:textColor="#F4821F"
-        android:text="@string/intro" />
-    
    <Button
-        android:id="@+id/pButton"
+        android:id="@+id/cButton"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,16 +13,37 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="36dp"
         android:textColor="#252333"
-        android:text="@string/pBttn" />
+        android:text="@string/cBttn" />
 
    <TextView
-       android:id="@+id/textView1"
+       android:id="@+id/note"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_below="@+id/pButton"
+       android:layout_alignParentTop="true"
        android:layout_centerHorizontal="true"
-       android:layout_marginTop="71dp"
+       android:layout_marginTop="20dp"
+       android:text="@string/intro"
+       android:textColor="#F4821F" />
+
+   <TextView
+       android:id="@+id/textPrediction"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/pButton"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="46dp"
        android:text="Tide Prediction"
        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <Button
+       android:id="@+id/pButton"
+       style="?android:attr/buttonStyleSmall"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_marginBottom="161dp"
+       android:text="@string/pBttn"
+       android:textColor="#252333" />
 
 </RelativeLayout>

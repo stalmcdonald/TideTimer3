@@ -50,9 +50,21 @@ public class SecondActivity extends Activity implements OnClickListener {
 
 }
 
+	//Activity 2 takes in a city and displays it on activity 1
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+		// get info from edit text and send back
+		String cityInfo = cityEntered.getText().toString();
+		//get info from intent that opens the class
+		Intent i = getIntent ();
+		//looking for c.putExtras
+		String msg = i.getStringExtra("cityEnter");
+		//Takes the result and closes the page and appends to MainActivity in its' button
+		if(msg.contentEquals("city")){
+			i.putExtra("enteredInfo", cityInfo);
+			setResult(RESULT_OK, i);
+			finish();
+		}
 		
 	}
-}
+}//end
