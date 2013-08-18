@@ -3,12 +3,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
-
-    <TextView
+    
+     <TextView
+        android:id="@+id/note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:textColor="#F4821F"
+        android:text="@string/intro" />
+    
+   <Button
+        android:id="@+id/pButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:textColor="#252333"
+        android:text="@string/pBttn" />
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/pButton"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="71dp"
+       android:text="Tide Prediction"
+       android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
