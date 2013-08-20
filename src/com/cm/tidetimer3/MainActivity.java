@@ -55,5 +55,14 @@ public class MainActivity extends Activity implements OnClickListener{
 		//string myCity = 
 		
 	}
+	
+	//Retrieves state from second activity to be added to url
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data){
+		super.onActivityResult(requestCode, resultCode, data);
+		if(data.getExtras().containsKey("enteredInfo")){
+			city.setText(data.getStringExtra("enteredInfo"));
+		}
+	}
 
 }//end
