@@ -7,6 +7,11 @@
 
 package com.cm.tidetimer3;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import com.cm.tidetimers2.MainActivity.LocRequest;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -46,13 +51,33 @@ public class MainActivity extends Activity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		// if city button pressed go to new activity
-		Intent i = new Intent(this, SecondActivity.class);
+		/*Intent i = new Intent(this, SecondActivity.class);
 		i.putExtra("cityEnter", "city");
-		startActivity(i);
+		startActivity(i);*/
+		
 		//Log.i("Entered:", city);
 		//Add City to url
 		//String baseURL =  "http://api.wunderground.com/api/3e64fa36c4f09bdd/tide/q/FL/"+cities+".json" 
 		//string myCity = 
+		
+		Intent i = new Intent(this, SecondActivity.class);
+		switch (v.getId()){
+		
+		//buttons
+		case R.id.cButton:
+			
+			//city button
+			i.putExtra("cityEnter", "city");
+			startActivityForResult(i,1);
+			break;
+		case R.id.pButton:
+		
+		//predict button
+			final String baseURL = "http://api.wunderground.com/api/3e64fa36c4f09bdd/tide/q/";
+			String c = city.getText().toString();
+			String p = predict.getText().toString();
+			String t = tidalPrediction.getText().toString();
+		}
 		
 	}
 	
